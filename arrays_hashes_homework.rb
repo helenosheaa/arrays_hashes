@@ -34,6 +34,7 @@ p stops.length
 
 #8. How many ways can we return `"Falkirk High"` from the array?
 p stops[2]
+p stops[-4]
 
 #9. Reverse the positions of the stops in the array
 p stops.reverse
@@ -106,10 +107,20 @@ users = {
 # Complete these tasks:
 
 #1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
+p users["Jonathan"][:twitter]
+
 #2. Get Erik's hometown
+p users["Erik"][:home_town]
+
 #3. Get the array of Erik's lottery numbers
+p users["Erik"][:lottery_numbers]
+
 #4. Get the type of Avril's pet Monty
+p users["Avril"][:pets][0][:species]
+
 #5. Get the smallest of Erik's lottery numbers
+p users["Erik"][:lottery_numbers].min()
+
 #6. Return an array of Avril's lottery numbers that are even
 #7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 #8. Change Erik's hometown to Edinburgh
